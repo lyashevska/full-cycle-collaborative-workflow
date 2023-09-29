@@ -2,7 +2,7 @@
 This module contains unit tests for the functions in the example module.
 """
 
-from example import add
+from example import add, subtract
 
 
 def test_add():
@@ -14,10 +14,10 @@ def test_add():
     assert add(0, 0) == 0
 
 
-# Unused subtract import removed
-
-
-# def test_subtract():
-#     assert subtract(5, 3) == 2
-#     assert subtract(10, -5) == 15
-#     assert subtract(0, 0) == 0
+def test_subtract():
+    """
+    Test the subtract function.
+    """
+    assert subtract(5, 3) == 2
+    assert subtract(10, -5) == 15
+    assert subtract(0, 0) == 0
